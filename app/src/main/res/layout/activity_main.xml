@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/arvoredesbotada"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/imageCopoId"
+            android:layout_width="143dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/coposplasticoscomborda" />
+
+        <ImageView
+            android:id="@+id/imageSacolaId"
+            android:layout_width="143dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageCopoId"
+            app:layout_constraintStart_toStartOf="@+id/imageCopoId"
+            app:layout_constraintTop_toBottomOf="@+id/numCoposHojeId"
+            app:srcCompat="@drawable/sacolapngborda" />
+
+        <ImageView
+            android:id="@+id/imageCanudoId"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageSacolaId"
+            app:layout_constraintStart_toStartOf="@+id/imageSacolaId"
+            app:layout_constraintTop_toBottomOf="@+id/numSacolasHojeId"
+            app:srcCompat="@drawable/canudopngborda" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="180dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logochaplin" />
+
+        <ImageView
+            android:id="@+id/subCopoId"
+            android:layout_width="49dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageCopoId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageCopoId"
+            app:layout_constraintTop_toTopOf="@+id/imageCopoId"
+            app:layout_constraintVertical_bias="0.25"
+            app:srcCompat="@drawable/botaomenos" />
+
+        <ImageView
+            android:id="@+id/subSacolaId"
+            android:layout_width="49dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageSacolaId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageSacolaId"
+            app:layout_constraintTop_toTopOf="@+id/imageSacolaId"
+            app:layout_constraintVertical_bias="0.25"
+            app:srcCompat="@drawable/botaomenos" />
+
+        <ImageView
+            android:id="@+id/subCanudoId"
+            android:layout_width="49dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageCanudoId"
+            app:layout_constraintStart_toEndOf="@+id/imageSacolaId"
+            app:layout_constraintTop_toTopOf="@+id/imageCanudoId"
+            app:layout_constraintVertical_bias="0.25"
+            app:srcCompat="@drawable/botaomenos" />
+
+        <ImageView
+            android:id="@+id/somaCopoId"
+            android:layout_width="49dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/subCopoId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/subCopoId"
+            app:srcCompat="@drawable/botaomais" />
+
+        <EditText
+            android:id="@+id/addSacolasId"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="@+id/subSacolaId"
+            app:layout_constraintEnd_toStartOf="@+id/somaSacolaId"
+            app:layout_constraintStart_toEndOf="@+id/subSacolaId"
+            app:layout_constraintTop_toTopOf="@+id/subSacolaId"
+            />
+
+        <EditText
+            android:id="@+id/addCanudosId"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="@+id/subCanudoId"
+            app:layout_constraintEnd_toStartOf="@+id/somaCanudoId"
+            app:layout_constraintStart_toEndOf="@+id/subCanudoId"
+            app:layout_constraintTop_toTopOf="@+id/subCanudoId"
+           />
+
+        <EditText
+            android:id="@+id/addCoposId"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="@+id/subCopoId"
+            app:layout_constraintEnd_toStartOf="@+id/somaCopoId"
+            app:layout_constraintStart_toEndOf="@+id/subCopoId"
+            app:layout_constraintTop_toTopOf="@+id/subCopoId"
+            />
+
+        <ImageView
+            android:id="@+id/somaSacolaId"
+            android:layout_width="49dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/subSacolaId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/subSacolaId"
+            app:srcCompat="@drawable/botaomais"
+            />
+
+        <ImageView
+            android:id="@+id/somaCanudoId"
+            android:layout_width="49dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/subCanudoId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/subCanudoId"
+            app:srcCompat="@drawable/botaomais" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            app:srcCompat="@drawable/iconefolhaespelhada" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            app:srcCompat="@drawable/iconefolha" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developed by: Manoel Prado"
+            android:textColor="#000000"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/instalogo" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="manoelprado9"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:text="sorveteriachaplin"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+            app:layout_constraintEnd_toStartOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+        <Button
+            android:id="@+id/buttonSalvaCopoId"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="salvar"
+            android:textSize="12sp"
+            android:theme="@style/botaoPadrao"
+            app:layout_constraintEnd_toEndOf="@+id/somaCopoId"
+            app:layout_constraintStart_toStartOf="@+id/subCopoId"
+            app:layout_constraintTop_toBottomOf="@+id/addCoposId" />
+
+        <Button
+            android:id="@+id/buttonSalvaSacolaId"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="salvar"
+            android:textSize="12sp"
+            android:theme="@style/botaoPadrao"
+            app:layout_constraintEnd_toEndOf="@+id/somaSacolaId"
+            app:layout_constraintStart_toStartOf="@+id/subSacolaId"
+            app:layout_constraintTop_toBottomOf="@+id/addSacolasId" />
+
+        <Button
+            android:id="@+id/buttonSalvaCanudoId"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="salvar"
+            android:textSize="12sp"
+            android:theme="@style/botaoPadrao"
+            app:layout_constraintEnd_toEndOf="@+id/somaCanudoId"
+            app:layout_constraintStart_toStartOf="@+id/subCanudoId"
+            app:layout_constraintTop_toBottomOf="@+id/addCanudosId" />
+
+        <TextView
+            android:id="@+id/numCoposHojeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageCopoId"
+            app:layout_constraintStart_toStartOf="@+id/imageCopoId"
+            app:layout_constraintTop_toBottomOf="@+id/imageCopoId" />
+
+        <TextView
+            android:id="@+id/numSacolasHojeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageSacolaId"
+            app:layout_constraintStart_toStartOf="@+id/imageSacolaId"
+            app:layout_constraintTop_toBottomOf="@+id/imageSacolaId" />
+
+        <TextView
+            android:id="@+id/numCanudosHojeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView14"
+            app:layout_constraintEnd_toEndOf="@+id/imageCanudoId"
+            app:layout_constraintStart_toStartOf="@+id/imageCanudoId"
+            app:layout_constraintTop_toBottomOf="@+id/imageCanudoId"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="12dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintEnd_toStartOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView6"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/arrobapng" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="12dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/textView5"
+            app:srcCompat="@drawable/arrobapng" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
