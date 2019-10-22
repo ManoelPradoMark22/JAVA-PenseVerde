@@ -3,4 +3,4 @@
 
 *"Nós somos a primeira geração a sentir os efeitos da mudança climática e a última geração que pode fazer algo sobre isso." - Barack Obama*
 </br>
-***Instagram: @manoelprado9 & @sorveteriachaplin***
+**Instagram: @manoelprado9 & @sorveteriachaplin**
